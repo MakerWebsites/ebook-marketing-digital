@@ -1,0 +1,164 @@
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+ul{
+ 
+  text-align: start;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff9800;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about, .highlights, .content-preview, .benefits, .testimonials, .faq, .security, .download {
+    max-width: 800px; /* Limitar a largura máxima */
+    margin: auto; /* Centralizar */
+}
+
+.highlights ul, .benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.highlights li, .benefits li {
+    background: #f1f1f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.testimonials {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.testimonials blockquote {
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.faq {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.faq-item {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.security {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-top: 2px solid #ccc;
+}
+
+.security-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite quebra de linha em dispositivos menores */
+}
+
+.security-logos img {
+    margin: 0 15px;
+    max-width: 100px; /* Ajuste o tamanho dos ícones */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 30px 10px; /* Menos padding em dispositivos menores */
+    }
+
+    .highlights li, .benefits li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .faq-item h3 {
+        font-size: 1em;
+    }
+
+    .faq-item p {
+        font-size: 0.9em;
+    }
+}
